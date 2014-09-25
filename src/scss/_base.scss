@@ -1,0 +1,17 @@
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+
+* {
+  @include box-sizing(border-box);
+}
+
+body {
+  background: $pearl-bush;
+  font-family: $font-1;
+}
+
+// icons
+.ico {
+  display: inline-block;
+}

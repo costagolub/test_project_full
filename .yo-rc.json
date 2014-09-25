@@ -1,0 +1,17 @@
+{
+  "generator-xh": {
+    "config": {
+      "projectName": "Test Project",
+      "useBranding": false,
+      "reloader": "LiveReload",
+      "server": true,
+      "ignoreDist": true,
+      "cssPreprocessor": "SCSS",
+      "isWP": false,
+      "features": [
+        "useModernizr",
+        "useCSS3Pie"
+      ]
+    }
+  }
+}

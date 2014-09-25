@@ -1,0 +1,49 @@
+// gradient
+@mixin linear-gradient($fromColor, $toColor) {
+  background-color: $toColor; /* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
+  background-image: -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
+  background-image: -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
+  background-image: linear-gradient(top, $fromColor, $toColor);
+  // filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,startColorstr='#{$fromColor}',endColorstr='#{$toColor}');
+}
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+  -moz-box-sizing: $box-model; // Firefox <= 19
+  box-sizing: $box-model;
+}
+
+// Use with @extend %clearfix;
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// border-radius
+%border-radius {
+  behavior: url(js/PIE.htc);
+  border-radius: 10px;
+}
+
+// box-shadow to blocks
+%box-shadow {
+  behavior: url(js/PIE.htc);
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.07);
+}
+
+// linear gradient from left top to left bottom
+%gradient-red {
+  @include linear-gradient($radical-red, $razzmatazz);
+}
+
+// text shadow
+%text-shadow {
+  behavior: url(js/PIE.htc);
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+}

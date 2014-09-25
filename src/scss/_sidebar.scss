@@ -1,0 +1,90 @@
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+.widget {
+  background: #fff;
+  @extend %border-radius;
+  @extend %box-shadow;
+  @extend %clearfix;
+  padding: 16px 20px 20px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: $arrow-town;
+  h4 {
+    color: $razzmatazz;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    padding-bottom: 18px;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: -20px;
+      right: -20px;
+      height: 1px;
+      background: url('../img/bg_dots_horizontal.png') center center repeat-x;
+    }
+  }
+
+  ul {
+    margin: -3px 0 0 0;
+    padding-left: 20px;
+    list-style-image: url('../img/bullet_arrow.png');
+    li {
+      a {
+        color: $arrow-town;
+        text-decoration: none;
+      }
+      padding-left: 7px;
+      margin-top: 16px;
+    }
+  }
+
+  address {
+    font-style: normal;
+    margin-top: -8px;
+    line-height: 19px;
+  }
+}
+
+
+/* socials */
+.socials {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    li {
+      display: inline-block;
+      margin-top: 0;
+      margin-right: -4px;
+      padding: 0;
+      width: 33.33%;
+      text-align: center;
+      a {
+        color: $arrow-town;
+        font-size: 12px;
+        line-height: 20px;
+        text-decoration: none;
+
+        .facebook-ico,
+        .twitter-ico,
+        .google-ico {
+          background: url('../img/sprite_socials.png') no-repeat;
+          width: 22px;
+          height: 22px;
+          vertical-align: middle;
+          margin-right: 8px;
+          margin-top: -4px;
+        }
+        .facebook-ico {background-position: -5px -5px;}
+        .twitter-ico {background-position: -5px -69px;}
+        .google-ico {background-position: -5px -37px;}
+      }
+    }
+  }
+}

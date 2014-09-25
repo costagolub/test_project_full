@@ -1,0 +1,22 @@
+/* ==========================================================================
+
+    Project: Test Project
+    Author:
+    Last updated: @@timestamp
+@@toc
+
+   ========================================================================== */
+
+@import "../bower_components/normalize.css/normalize.scss";
+
+/* ==========================================================================
+   Custom Styling
+   ========================================================================== */
+
+@import "variables";
+@import "mixins";
+@import "base";
+@import "common";
+@import "colorbox";
+@import "content";
+@import "sidebar";
